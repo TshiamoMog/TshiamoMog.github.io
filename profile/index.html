@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="./assets/css/styles.css">
+
+      <title>Mogoai Tshiamo - Profile Website</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="./index.html" class="nav__logo">
+               <span class="nav__logo-circle">T</span>
+               <span class="nav__logo-name">T. Mogoai</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="./index.html" class="nav__link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="./about.html" class="nav__link">About Me</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="./work.html" class="nav__link">Portfolio</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="./contact.html" class="button">Contact Me</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Theme button -->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-apps-2-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section">
+            <div class="home__rectangle"></div>
+
+            <div class="home__container container grid">
+               <div class="home__perfil perfil">
+                  <div class="perfil__content">
+                     <img src="./assets/img/home-perfil.png" alt="image" class="perfil__img">
+                  </div>
+               </div>
+
+               <div class="home__content grid">
+                  <div class="home__data grid">
+                     <h1 class="home__name">Tshiamo Mogoai</h1>
+
+                     <h2 class="home__profession">Software Engineer</h2>
+
+                     <div class="home__social">
+                        <a href="https://github.com/TshiamoMog" target="_blank" class="home__social-link">
+                           <i class="ri-github-fill"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/tshiamo-mogoai-8b09652b9" target="_blank" class="home__social-link">
+                           <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                     </div>
+                  </div>
+
+                  <a href="./assets/pdf/Resume of Tshiamo Mogoai.pdf" download="" class="home__button button">Download CV</a>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <h2 class="section__title">
+               The services <br>
+               I Offer
+            </h2>
+
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <i class="ri-code-s-slash-line services__icon"></i>
+                  <h2 class="service__title">Web Development</h2>
+                  <p class="service__description">
+                     Beautiful and elegant designs with 
+                     interfaces that are intuitive, efficient and 
+                     pleasant to use for the user.
+                  </p>
+
+                  <button class="services__button button">Know More</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="services__modal-title">Web Developer</h2>
+
+                        <ul class="services__modal-list grid">
+                           <li class="services__modal-item">
+                              User-Friendly Navigation
+                           </li>
+
+                           <li class="services__modal-item">
+                              Responsive Design
+                           </li>
+
+                           <li class="services__modal-item">
+                              Visual Appeal
+                           </li>
+
+                           <li class="services__modal-item">
+                              High-Quality Content
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-server-line services__icon"></i>
+                  <!-- <i class="ri-pen-nib-line services__icon"></i> -->
+                  <h2 class="service__title">Back-End Development</h2>
+                  <p class="service__description">
+                     Efficient architecture with systems that are intuitive, streamlined, and optimized for seamless functionality. 
+                  </p>
+
+                  <button class="services__button button">Know More</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="service__modal-title">Back-End Developer</h2>
+
+                        <ul class="services__modal-list grid">
+                           <li class="services__modal-item">
+                              Scalable
+                           </li>
+
+                           <li class="services__modal-item">
+                              Reliable.
+                           </li>
+
+                           <li class="services__modal-item">
+                              Secure.
+                           </li>
+
+                           <li class="services__modal-item">
+                              Maintainable
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-database-2-line services__icon"></i>
+                  <h2 class="service__title">Database Development</h2>
+                  <p class="service__description">
+                     Architectures with structures that are seamlessly functional, for users to interacting with their data. 
+                  </p>
+
+                  <button class="services__button button">Know More</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="service__modal-title">Database Developer</h2>
+
+                        <ul class="services__modal-list grid">
+                           <li class="services__modal-item">
+                              Query Optimization
+                           </li>
+
+                           <li class="services__modal-item">
+                              Secure
+                           </li>
+
+                           <li class="services__modal-item">
+                              Concurrency Control
+                           </li>
+
+                           <li class="services__modal-item">
+                              Backup and Recovery
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+               
+               <article class="services__card">
+                  <i class="ri-timer-line services__icon"></i>
+                  <h2 class="service__title">Project Management</h2>
+                  <p class="service__description">
+                     Streamlined project planning, 
+                     optimized scheduling, efficient, and effective
+                     people skills. 
+                  </p>
+
+                  <button class="services__button button">Know More</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="service__modal-title">Project Manager</h2>
+
+                        <ul class="services__modal-list grid">
+                           <li class="services__modal-item">
+                              Project Overview
+                           </li>
+
+                           <li class="services__modal-item">
+                              Roles and Responsibilities
+                           </li>
+
+                           <li class="services__modal-item">
+                              Resource Allocation
+                           </li>
+
+                           <li class="services__modal-item">
+                              Quality Assurance
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-router-line services__icon"></i>
+                  <h2 class="service__title">Network Development</h2>
+                  <p class="service__description">
+                     Network solutions characterized by streamlined designs, 
+                     that prioritize efficiency, 
+                     for seamless interaction. 
+                  </p>
+
+                  <button class="services__button button">Know More</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="service__modal-title">Network Developer</h2>
+
+                        <ul class="services__modal-list grid">
+                           <li class="services__modal-item">
+                              Resilience
+                           </li>
+
+                           <li class="services__modal-item">
+                              Cost-effectiveness
+                           </li>
+
+                           <li class="services__modal-item">
+                              Performance
+                           </li>
+
+                           <li class="services__modal-item">
+                              User Experience
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <i class="ri-bubble-chart-line services__icon"></i>
+                  <h2 class="service__title">Information Systems</h2>
+                  <p class="service__description">
+                     Innovative information system designs
+                     that prioritize intuitiveness, efficiency, 
+                     and user satisfaction. 
+                  </p>
+
+                  <button class="services__button button">Know More</button>
+
+                  <div class="services__modal">
+                     <div class="services__modal-content">
+                        <i class="ri-close-line services__modal-close"></i>
+
+                        <h2 class="service__modal-title">Information Systems Knowledge</h2>
+
+                        <ul class="services__modal-list grid">
+                           <li class="services__modal-item">
+                              Accuracy
+                           </li>
+
+                           <li class="services__modal-item">
+                              Accessibility
+                           </li>
+
+                           <li class="services__modal-item">
+                              Usability
+                           </li>
+
+                           <li class="services__modal-item">
+                              Timeliness
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== WORK ====================-->
+         <section class="work section">
+            <h2 class="section__title">
+               My Most <br>
+               Recent Projects
+            </h2>
+
+            <div class="work__container container grid">
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="./assets/img/work-0.png" alt="" class="projects__img">
+
+                     <a href="https://github.com/TshiamoMog/Code-Snippets" class="projects__button button">
+                        <i class="ri-github-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Console Application c#</h3>
+                     <h2 class="projects__title">Code Snippets</h2>
+
+                     <p class="projects__description">
+                        Console application that offers various functionalities including generating Fibonacci Sequences, Star Patterns, Prime Numbers, and Factorials.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/TshiamoMog/Code-Snippets" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+               </article>
+               
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="./assets/img/work-1.png" alt="" class="projects__img">
+
+                     <a target="_blank" href="https://tshiamomog.github.io/digital-clock/" class="projects__button button">
+                        <i class="ri-pages-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Web based (Simple Project)</h3>
+                     <h2 class="projects__title">Digital Clock</h2>
+
+                     <p class="projects__description">
+                        An electronic timekeeping application that displays the current time in a 24-hour format, the full date and day. Created using hml, css and javascript.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/TshiamoMog/Digital-Clock" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="./assets/img/work-2.png" alt="" class="projects__img">
+
+                     <a target="_blank" href="https://tshiamomog.github.io/todo-app/" class="projects__button button">
+                        <i class="ri-pages-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Web based (Simple Project)</h3>
+                     <h2 class="projects__title">Todo Application</h2>
+
+                     <p class="projects__description">
+                        Digital organizer designed to help users create and manage tasks, with completion and categorization options for efficient task management.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/TshiamoMog/To-Do-Application" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="./assets/img/work-3.png" alt="" class="projects__img">
+
+                     <a target="_blank" href="https://tshiamomog.github.io/budget-tracker-app/" class="projects__button button">
+                        <i class="ri-pages-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Web based (Simple Project)</h3>
+                     <h2 class="projects__title">Expense Tracker</h2>
+
+                     <p class="projects__description">
+                        Financial management tool for users to monitor income and expenses, and aiding in the creation and maintenance of a balanced budget. 
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/TshiamoMog/Expense-Tracker" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="./assets/img/work-4.png" alt="" class="projects__img">
+
+                     <a target="_blank" href="https://tshiamomog.github.io/note-taking-app/" class="projects__button button">
+                        <i class="ri-pages-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Web based (Simple Project)</h3>
+                     <h2 class="projects__title">Notepad</h2>
+
+                     <p class="projects__description">
+                        Digital tool used for capturing and storing textual content on a sticky note, facilitating efficient retrieval and management of information for personal or professional use.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/TshiamoMog/Note-Taking-Application" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="./assets/img/work-5.png" alt="" class="projects__img">
+
+                     <a href="https://github.com/TshiamoMog/Tic-Tac-Toe" class="projects__button button">
+                        <i class="ri-github-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">WPF c# (Intermediate Project)</h3>
+                     <h2 class="projects__title">Tic Tac Toe</h2>
+
+                     <p class="projects__description">
+                        Classic two-player game where opponents take turns marking spaces in a 3x3 grid, aiming to create a row, column, or diagonal of their symbol (X or O) before their opponent does.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/TshiamoMog/Tic-Tac-Toe" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="./assets/img/work-6.png" alt="" class="projects__img">
+
+                     <a href="https://github.com/TshiamoMog/Tetris" class="projects__button button">
+                        <i class="ri-github-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Java (Intermediate Project)</h3>
+                     <h2 class="projects__title">Tetris</h2>
+
+                     <p class="projects__description">
+                        Puzzle video game where players manipulate falling tetrominoes to create complete horizontal lines, aiming to prevent the stack from reaching the top of the playing field.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/TshiamoMog/Tetris" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="./assets/img/work-7.png" alt="" class="projects__img">
+
+                     <a href="https://github.com/TshiamoMog/Calculator" class="projects__button button">
+                        <i class="ri-github-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Windows Forms c# (Intr. Project)</h3>
+                     <h2 class="projects__title">Basic Calculator</h2>
+
+                     <p class="projects__description">
+                        Designed to perform arithmetic operations such as addition, subtraction, multiplication, and division, featuring a numeric keypad and a display screen.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/TshiamoMog/Calculator" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="./assets/img/work-8.png" alt="" class="projects__img">
+
+                     <a href="https://github.com/TshiamoMog/Questionnaire-Application" class="projects__button button">
+                        <i class="ri-github-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Full Stack (Capstone Project)</h3>
+                     <h2 class="projects__title">ProbeKIT</h2>
+
+                     <p class="projects__description">
+                        A Questionnaire Application designed to help users create and manage questionnaires and their answers, with the benefit of more efficient vetting the participants of your survey.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/TshiamoMog/Questionnaire-Application" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="./assets/img/work-9.png" alt="" class="projects__img" id="profile-image">
+
+                     <a href="" class="projects__button button">
+                        <i class="ri-github-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Web Page</h3>
+                     <h2 class="projects__title">Profile</h2>
+
+                     <p class="projects__description">
+                        Professional online site where I showcase my skills, accomplishments, portfolio, and contact information to facilitate networking and career opportunities.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="" class="projects__link">
+                        <i class="ri-git-repository-private-line"></i>You Are Already Viewing It 😊
+                     </a>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== TESTIMONIAL ====================-->
+         <section class="testimonial section">
+            <h2 class="section__title">
+               What They Say <br>
+               About Me?
+            </h2>
+
+            <div class="testimonial__container container">
+               <div class="testimonial__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <!-- <article class="testimonial__card swiper-slide">
+                        <div class="testimonial__border">
+                           <img src="./assets/img/testimonial-1.png" alt="image" class="testimonial__img">
+                        </div>
+
+                        <h2 class="testimonial__name">Juan Trytsman</h2>
+                        <a href="https://www.linkedin.com/in/juan-trytsman/" target="_blank" class="testimonial__position">Senior Software Developer</a>
+                        <p class="testimonial__description">
+                           Summarizing my experience working with Tshiamo into a single sentence would not do him justice, so the feel free to reach out to me at +27 60 988 1293 for an understanding of what working with this young man was like.
+                        </p>
+                     </article> -->
+
+                     <article class="testimonial__card swiper-slide">
+                        <div class="testimonial__border">
+                           <img src="./assets/img/testimonial-2.png" alt="image" class="testimonial__img">
+                        </div>
+
+                        <h2 class="testimonial__name">Vuyo F. Mathe</h2>
+                        <a href="https://www.linkedin.com/in/vuyo-mathe-4b4077249/" target="_blank" class="testimonial__position">SRC Vice President</a>
+                        <p class="testimonial__description">
+                           I commend Tshiamo for his exemplary conduct in fostering a more connected student body, consistently demonstrating dedication to this goal. Host games and movie nights to this end.
+                        </p>
+                     </article>
+
+                     <article class="testimonial__card swiper-slide">
+                        <div class="testimonial__border">
+                           <img src="./assets/img/testimonial-3.png" alt="image" class="testimonial__img">
+                        </div>
+
+                        <h2 class="testimonial__name">Beloved M. Nethengwe</h2>
+                        <a href="https://www.linkedin.com/in/beloved-nethengwe-9367b1263/" target="_blank" class="testimonial__position">Frequent Group Member</a>
+                        <p class="testimonial__description">
+                           Working alongside Tshiamo, I've been consistently impressed by their unwavering dedication, innovative problem-solving, and seamless collaboration, making our team's achievements truly seamless.
+                        </p>
+                     </article>
+
+                     <article class="testimonial__card swiper-slide">
+                        <div class="testimonial__border">
+                           <img src="./assets/img/testimonial-4.png" alt="image" class="testimonial__img">
+                        </div>
+
+                        <h2 class="testimonial__name">Tshiamo Mogoai</h2>
+                        <a href="./contact.html" target="_blank" class="testimonial__position">The Man Himself</a>
+                        <p class="testimonial__description">
+                        <p class="testimonial__description">
+                           Even at what may be percieved to be my own expense, I steadfastly support my team. There is no <b>i</b> in <b>team</b>, yes. However, <b>I</b> could be part of your <b>Team</b>. So Let's <a href="./contact.html">connect</a>, before some other team gets to me first. 😉
+                        </p>
+                     </article>
+                  </div>
+               </div>
+
+               <!-- Pagination -->
+               <div class="swiper-pagination"></div>
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section">
+            <div class="contact__container container grid">
+               <h2 class="section__title">
+                  Let's Talk <br>
+                  About Your Offer
+               </h2>
+
+               <a href="./contact.html" class="contact__button button">Contact Me</a>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+               <a href="./index.html" class="footer__logo">T. Mogoai</a>
+
+               <ul class="footer__links">
+                  <li>
+                     <a href="./about.html" class="footer__link">About Me</a>
+                  </li>
+
+                  <li>
+                     <a href="./work.html" class="footer__link">Portfolio</a>
+                  </li>
+
+                  <li>
+                     <a href="./contact.html" class="footer__link">Contact Me</a>
+                  </li>
+               </ul>
+
+               <div class="footer__social">
+                  <a href="https://github.com/TshiamoMog" target="_blank" class="home__social-link">
+                     <i class="ri-github-fill"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/tshiamo-mogoai-8b09652b9" target="_blank" class="home__social-link">
+                     <i class="ri-linkedin-box-fill"></i>
+                  </a>
+               </div>
+            </div>
+
+            <span class="footer__copy">
+               &#169; All Right Reserved
+            </span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== INDEX JS ===============-->
+      <script src="assets/js/index.js"></script>
+   </body>
+</html>

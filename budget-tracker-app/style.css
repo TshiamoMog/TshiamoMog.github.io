@@ -1,0 +1,82 @@
+body{
+    background: linear-gradient(135deg, rgb(0, 75, 0), white);
+    padding: 3rem;
+    min-height: 100vh;
+}
+
+#app{
+    padding: 4rem;
+    padding-right: 0.6rem;
+    border-radius: 2rem;
+    margin: auto;
+    width: 800px;
+    background: rgba(128, 0, 0, 0.35);
+    color: white;
+}
+
+.cf-tracker {
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+* {
+    font-family: 'montserrat', sans-serif;
+}
+
+.cf-tracker th {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.cf-tracker td {
+    padding: 5px;
+}
+
+.input, .delete-entry {
+    height: 30px;
+    font-size: 13px;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #bbbbbb;
+}
+
+.delete-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: none;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.controls, .summary {
+    text-align: right;
+    padding-bottom: 12rem;
+}
+
+.new-item {
+    border: 1px solid ;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    background-color: rgba(0, 128, 0, 0.25);
+    border-radius: 0.5rem;
+    box-shadow: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
