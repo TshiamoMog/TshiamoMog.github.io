@@ -753,17 +753,17 @@ body.dark-theme{
 }
 
 /* Swiper class */
-.swiper-pagnation-bullets.swiper-pagnation-horizontal{
+.swiper-pagination-bullets.swiper-pagination-horizontal{
   bottom: -1rem;
 }
 
-.swiper-pagnation-bullets{
-  background-color: var(--first-color-light);
+.swiper-pagination-bullet{
+  background-color: var(--first-color);
   opacity: 1;
 }
 
-.swiper-pagnation-bullets-active{
-  background-color: var(--first-color);
+.swiper-pagination-bullet-active{
+  background-color: var(--first-color-light);
 }
 
 /*=============== CONTACT ===============*/
