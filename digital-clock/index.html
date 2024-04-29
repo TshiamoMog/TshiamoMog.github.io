@@ -5,53 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./New Bitmap Image.bmp" type="image/x-icon">
 </head>
 <body>
     <div class="hero">
         <div class="container">
             <div class="clock">
-                <span id="hrs">00</span>
-                <span>:</span>
-                <span id="min">00</span>
-                <span>:</span>
-                <span id="sec">00</span>
-            </div>
-            <div class="date">
-                <span id="date"></span>
-                <span class="space"></span>
-                <span id="month"></span>
-                <span class="space"></span>
-                <span id="year"></span>
-            </div>
-            <div class="day">
-                <span id="day"></span>
+                <div class="analogue__clock">
+                    <div class="clock__face"></div>
+                    <div class="analogue__hour-arm" id="clock-hour"></div>
+                    <div class="analogue__minutes-arm" id="clock-minutes"></div>
+                    <div class="analogue__seconds-arm" id="clock-seconds"></div>
+                </div>
+    
+                <div>
+                    <div class="digital__clock">
+                        <span class="digital__clock-hour" id="digital-hour"></span>
+                        <span class="digital__clock-minutes" id="digital-minutes"></span>
+                        <span class="digital__clock-seconds" id="digital-seconds"></span>
+                        <span class="digital__clock-ampm" id="digital-ampm"></span>
+                    </div>
+    
+                    <div class="clock__date">
+                        <div>
+                            <span class="clock__day" id="date-day"></span>
+                            <span class="clock__month" id="date-month"></span>
+                            <span class="clock__year" id="date-year"></span>
+                        </div>
+    
+                        <span class="clock__day-week" id="date-day-week"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        let hrs = document.getElementById("hrs");
-        let min = document.getElementById("min");
-        let sec = document.getElementById("sec");
-        let date = document.getElementById("date");
-        let month = document.getElementById("month")
-        let year = document.getElementById("year");
-        let day = document.getElementById("day");
-
-        let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        let monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-        
         setInterval(() => {
             let currentTime = new Date();
+            let analogue__hour = document.getElementById("clock-hour");
+            let analogue__minutes = document.getElementById("clock-minutes");
+            let analogue__seconds = document.getElementById("clock-seconds");
+
+            let h = currentTime.getHours() / 12 * 360;
+            let m = currentTime.getMinutes() / 60 * 360;
+            let s = currentTime.getSeconds() / 60 *360;
+
+            let hh = currentTime.getHours();
+            let mm = currentTime.getMinutes();
+            let ss = currentTime.getSeconds();
+
+            let hrs = document.getElementById("digital-hour");
+            let min = document.getElementById("digital-minutes");
+            let sec = document.getElementById("digital-seconds");
+            let date = document.getElementById("date-day");
+            let month = document.getElementById("date-month")
+            let year = document.getElementById("date-year");
+            let day = document.getElementById("date-day-week");
+
+            let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            let monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+            let digital__AmPm = document.getElementById('digital-ampm');
+
+            analogue__hour.style.transform = `rotateZ(${h + m / 12}deg)`
+            analogue__hour.style.transition = '2s'
+            analogue__minutes.style.transform = `rotateZ(${m}deg)`
+            analogue__minutes.style.transition = '1s'
+            analogue__seconds.style.transform = `rotateZ(${s}deg)`
             
             hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
+
             min.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
+
             sec.innerHTML = (currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
+
             date.innerHTML = currentTime.getDate();
             month.innerHTML = monthsOfYear[currentTime.getMonth()];
             year.innerHTML = currentTime.getFullYear();
+
             day.innerHTML = daysOfWeek[currentTime.getDay()];
+
+            if(hh >= 12){
+                hh = hh - 12
+                ampm = 'PM'
+            } else{
+                ampm = 'AM'
+            }
+
+            digital__AmPm.innerHTML = ampm
+            
+            if(hh == 0){hh = 12}
+
+            if(hh < 10){hh = `0${hh}`}
+            hrs.innerHTML = `${hh}:`
+
+            if(mm < 10){mm = `0${mm}`}
+            min.innerHTML = `${mm}:`
+
+            if(ss < 10){ss = `0${ss}`}
+            sec.innerHTML = ss
 
         }, 1000);
     
