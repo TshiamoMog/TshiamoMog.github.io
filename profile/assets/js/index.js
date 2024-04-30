@@ -45,7 +45,8 @@ window.addEventListener('scroll', scrollUp)
 /*=============== SHOW SOCIAL NETWORKS ===============*/
 const showSocial = (toggleCard, socialCard) =>{
     const toggle = document.getElementById(toggleCard),
-          social = document.getElementById(socialCard)
+          social = document.getElementById(socialCard),
+          icon = document.getElementById('toggle-icon')
     
     toggle.addEventListener('click', ()=>{
         // If the animation class exists, we add the down-animation class
@@ -56,6 +57,15 @@ const showSocial = (toggleCard, socialCard) =>{
             setTimeout(() =>{
                 social.classList.remove('down-animation')
             }, 1000)
+        }
+
+        if (icon.classList.contains('ri-eye-off-line')){
+            icon.classList.add('ri-eye-line')
+            icon.classList.remove('ri-eye-off-line')
+
+        } else {
+            icon.classList.remove('ri-eye-line')
+            icon.classList.add('ri-eye-off-line')
         }
 
         // We add the animation class to the div tag with the card__social class

@@ -1234,6 +1234,7 @@ body.dark-theme{
   cursor: pointer;
   position: relative;
   z-index: 10;
+  transition: transform 0.45s ease;
 }
 .card__social-text {
   display: block;
@@ -1269,6 +1270,10 @@ body.dark-theme{
 /* Rotate social */
 .animation .card__social-control {
   transform: rotate(-135deg);
+
+  .card__social-toggle{
+    transform: rotate(calc(135deg));
+  }
 }
 
 /* Up animation */
