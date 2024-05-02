@@ -136,7 +136,7 @@ body {
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
     .clock {
         width: 176px;
         height: 328px;
