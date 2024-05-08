@@ -43,18 +43,9 @@
     <script>
         setInterval(() => {
             let currentTime = new Date();
-            let analogue__hour = document.getElementById("clock-hour");
-            let analogue__minutes = document.getElementById("clock-minutes");
-            let analogue__seconds = document.getElementById("clock-seconds");
-
-            let h = currentTime.getHours() / 12 * 360;
-            let m = currentTime.getMinutes() / 60 * 360;
-            let s = currentTime.getSeconds() / 60 *360;
-
-            let hh = currentTime.getHours();
-            let mm = currentTime.getMinutes();
-            let ss = currentTime.getSeconds();
-
+            let alog__hr = document.getElementById("clock-hour");
+            let alog__min = document.getElementById("clock-minutes");
+            let alog__sec = document.getElementById("clock-seconds");
             let hrs = document.getElementById("digital-hour");
             let min = document.getElementById("digital-minutes");
             let sec = document.getElementById("digital-seconds");
@@ -62,50 +53,39 @@
             let month = document.getElementById("date-month")
             let year = document.getElementById("date-year");
             let day = document.getElementById("date-day-week");
+            let digital__AmPm = document.getElementById('digital-ampm');
+
+            let hh = currentTime.getHours();
+            let mm = currentTime.getMinutes();
+            let ss = currentTime.getSeconds();
+
+            let h = hh / 12 * 360;
+            let m = mm / 60 * 360;
+            let s = ss / 60 *360;
+
 
             let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
             let monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-            let digital__AmPm = document.getElementById('digital-ampm');
 
-            analogue__hour.style.transform = `rotateZ(${h + m / 12}deg)`
-            analogue__hour.style.transition = '2s'
-            analogue__minutes.style.transform = `rotateZ(${m}deg)`
-            analogue__minutes.style.transition = '1s'
-            analogue__seconds.style.transform = `rotateZ(${s}deg)`
+            alog__hr.style.transform = `rotateZ(${h + m / 12}deg)`
+            alog__hr.style.transition = '2s'
+            alog__min.style.transform = `rotateZ(${m}deg)`
+            alog__min.style.transition = '1s'
+            alog__sec.style.transform = `rotateZ(${s}deg)`
             
-            hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
+            hrs.innerHTML = (hh > 12 ? hh = hh - 12 : hh = hh);
+            hrs.innerHTML = (hh < 10 ? "0" : "") +  hh + ":";
+            min.innerHTML = (mm < 10 ? "0" : "") + mm  + ":";
+            sec.innerHTML = (ss < 10 ? "0" : "") + ss;
 
-            min.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
-
-            sec.innerHTML = (currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
+            digital__AmPm.innerHTML = ( hh > 12 ? 'PM' : 'AM')
 
             date.innerHTML = currentTime.getDate();
             month.innerHTML = monthsOfYear[currentTime.getMonth()];
             year.innerHTML = currentTime.getFullYear();
 
             day.innerHTML = daysOfWeek[currentTime.getDay()];
-
-            if(hh >= 12){
-                hh = hh - 12
-                ampm = 'PM'
-            } else{
-                ampm = 'AM'
-            }
-
-            digital__AmPm.innerHTML = ampm
-            
-            if(hh == 0){hh = 12}
-
-            if(hh < 10){hh = `0${hh}`}
-            hrs.innerHTML = `${hh}:`
-
-            if(mm < 10){mm = `0${mm}`}
-            min.innerHTML = `${mm}:`
-
-            if(ss < 10){ss = `0${ss}`}
-            sec.innerHTML = ss
-
         }, 1000);
     
     </script>

@@ -276,7 +276,7 @@ body.dark-theme{
     position: fixed;
     top: -100%;
     left: 0;
-    background-color: transparent;
+    background-color: var(--body-color);
     width: 100%;
     backdrop-filter: blur(60px);
     box-shadow: 0 12px 24px var(--shadow-color);
