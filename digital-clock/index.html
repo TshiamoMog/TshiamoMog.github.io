@@ -74,12 +74,12 @@
             alog__min.style.transition = '1s'
             alog__sec.style.transform = `rotateZ(${s}deg)`
             
+            digital__AmPm.innerHTML = ( hh > 12 ? 'PM' : 'AM')
+            
             hrs.innerHTML = (hh > 12 ? hh = hh - 12 : hh = hh);
             hrs.innerHTML = (hh < 10 ? "0" : "") +  hh + ":";
             min.innerHTML = (mm < 10 ? "0" : "") + mm  + ":";
             sec.innerHTML = (ss < 10 ? "0" : "") + ss;
-
-            digital__AmPm.innerHTML = ( hh > 12 ? 'PM' : 'AM')
 
             date.innerHTML = currentTime.getDate();
             month.innerHTML = monthsOfYear[currentTime.getMonth()];
