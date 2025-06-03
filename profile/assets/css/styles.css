@@ -1308,3 +1308,9 @@ body.dark-theme{
     width: 40vw;
   }
 }
+
+.theme-entry .grid .grid-column-headers {
+
+    text-transform: capitalize !important;
+
+}
