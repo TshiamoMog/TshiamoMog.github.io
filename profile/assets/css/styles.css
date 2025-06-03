@@ -1309,7 +1309,7 @@ body.dark-theme{
   }
 }
 
-.theme-entry .grid .grid-column-headers {
+.theme-entry .grid .grid-column-headers div{
 
     text-transform: capitalize !important;
 
